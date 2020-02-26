@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Решение уравнений</title>	
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<style>
+		* {
+			box-sizing: border-box;
+			font-family: 'Roboto', sans-serif;
+			outline: 0;
+		}
+		.title {
+			text-align: center;
+		}
+		.wrap {
+			display: flex;
+			justify-content: space-around;
+		}
+		.form__input {
+			height: 30px;
+			font-size: 26px;
+			
+		}
+		.form {
+			display: flex;
+			flex-direction: column;
+			width: 200px;
+			height: 200px;
+			justify-content: space-between;
+		}
+		.answer {
+			display: inline-block;
+			width: 400px;
+			height: 400px;
+			margin-right: 0;
+		}
+		.answer__input {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="title">Решение уравнения, вида ax<sup>2</sup>+bx+c = 0, с любыми коэффициентами</h1>
+<div class="wrap">
+		<form class="form">
+			<h3><label>Коэффициэнт a</label></h3>
+			<input type="text" class="form__input" id="a">
+			<h3><label>Коэффициэнт b</label></h3>
+			<input type="text" class="form__input" id="b">
+			<h3><label>Коэффициэнт c</label></h3>
+			<input type="text" class="form__input" id="c">
+			<button class="form__button" onclick="yy();	return false">Решить</button>
+		</form>
+		<div class="answer">
+			<div class="answer__input"></div>
+		</div>
+		</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="src.js"></script>
+</body>
+</html>
