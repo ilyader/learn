@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../src/css/registration.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/normalize.css">
+</head>
+<body>
+	<div class="wrap">
+	<section class="hero">
+		<form action="" class="hero-form">
+			<div class="hero-form__wrap">
+				<label for="name" class="hero-form__text">Введите имя</label>
+				<input type="text" class="hero-form__input" id="name" name="name">
+				<div id="namee" style="display: none;">Введите имя</div>
+			</div>
+		 <div class="hero-form__wrap">
+			 <label for="forumName" class="hero-form__text">Введите имя на форуме</label>
+			 <input type="text" class="hero-form__input" id="forumName" name="forumName">
+			 <div id="forumNamee" style="display: none;">Введите ник</div>
+		 </div>
+		 <div class="hero-form__wrap">
+			 <label for="password" class="hero-form__text">Введите пароль</label>
+			 <input type="password" class="hero-form__input" id="password" name="password">
+			 <div id="passworde" style="display: none;">Введите пароль от 6 символов</div>
+		 </div>
+		<div>
+			<button class="hero-form__btn btn">Зарегистрироваться</button>
+		</div>
+	</form>
+	</section>
+</div>
+<script src="../src/js/registration.js"></script>
+</body>
+</html>
+
