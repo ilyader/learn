@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		* {
+			box-sizing: border-box;
+			font-family: Roboto;
+		}
+		body {
+			margin: 0;
+		}
+		label {
+			display: block;
+			text-align: center;
+		}
+		.container {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-around;
+		}
+		.title {
+			text-align: center;
+			font-size: 40px;
+			margin-bottom: 100px;
+		}
+		.main-form {
+			width: 500px;
+			height: 300px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			font-size: 20px;
+		}
+		.inp {
+			outline: 0;
+		}
+		.answer {
+			height: 400px;
+			width: 400px;
+			font-size: 20px;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<title>Кодирование</title>
+</head>
+<body>
+	<h1 class="title">Код Хемминга</h1>
+<div class="container">
+		<form action="#" class="main-form">
+	  <div>
+				<label for="inp" class="lab">Слово(буква)</label>
+				<input type="text" class="inp">
+	  </div>
+			<button class="btn">Закодировать</button>
+		</form>
+		<div class="answer"></div>
+		</div>
+	<script src="index.js"></script>
+</body>
+</html>
